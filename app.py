@@ -31,17 +31,18 @@ def our_service():
 def test():
   print(request.files['myfile'])
   category = request.form["class"]
-  bug = "점박이응애"
+  bug = "점박이응애"#사진 분석 한걸 넣기
   db_class = dbModule.Database()
-  sql = 'SELECT * FROM list WHERE class = "{}" AND name = "{}";'.format(category, bug)
+  sql = 'SELECT * FROM list WHERE class = "{}" AND name = "{}" limit 10;'.format(category, bug)
   print(sql)
   row = db_class.executeALL(sql)
+  print(row)
   result = dict()
   for i in range(len(row)):
     result[i] = row[i]
   resp = make_response(json.dumps(result, ensure_ascii=False))
 
-  return resp
+  return render_template('result.html', bug=bug, data=row)
 
 
 if __name__=="__main__":

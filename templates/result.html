@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta authors="DATA_CAMPUS_KU_TEAM4" />
+  <meta name="viewport" content="width=device-width">
+  <title>Welcome Farm protector!</title>
+  <link rel="stylesheet" type="text/css" href={{url_for('static',filename='style-size.css')}} />
+  <link rel="stylesheet" type="text/css" href={{url_for('static',filename='style-layout.css')}} />
+  <link rel="stylesheet" type="text/css" href={{url_for('static',filename='style-presentation.css')}} />
+</head>
+
+<body class="result">
+  <br />
+  <br />
+  <h1>분석결과</h1>
+  <h3>해충명: {{bug}}</h3>
+  <ol>
+    {% for item in data %}
+    <li>
+      <p>작물명: {{item.plant}}</p>
+      <p>살충제명: {{item.medi}}</p>
+    </li>
+    {% endfor %}
+  </ol>
+
+
+</body>
+
+</html>
