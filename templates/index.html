@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+  
+  <head>
+    <meta charset="utf-8" />
+    <meta authors="DATA_CAMPUS_KU_TEAM4" />
+    <meta name="viewport" content="width=device-width">
+    <title>Welcome Farm protector!</title>
+    <link rel="stylesheet" type="text/css" href={{url_for('static',filename='style-size.css')}} />
+    <link rel="stylesheet" type="text/css" href={{url_for('static',filename='style-layout.css')}} />
+    <link rel="stylesheet" type="text/css" href={{url_for('static',filename='style-presentation.css')}} />
+  </head>
+  
+  <body>
+    <script src="script.js"> </script>
+  
+    <div class="wrap">
+      <header>
+        <a id="logo" href="index.html"> 작물지킴이 </a>
+      </header>
+  
+      <nav>
+        <ul>
+          <li><a href="http://localhost:5000/we-do" target="display_area">We do</a></li>
+          <li><a href="http://localhost:5000/we-are" target="display_area">We are</a></li>
+          <li><a href="http://localhost:5000/our-service" target="display_area">Our service</a></li>
+          <li class="right"><a href="" target="display_area">한눈에 모아보기</a></li>
+        </ul>
+      </nav>
+  
+      <hr />
+  
+      <article class="left">
+        <iframe id="background" name="display_area" src={{url_for('static',filename='background1.jpg')}} width="500px" height="500px"></iframe>
+      </article>
+
+      <aside class="right">
+        <a style="width:100px" href="https://www.rda.go.kr/main/mainPage.do">농촌진흥청</a><br />
+        <a style="width:100px"          href="https://ncpms.rda.go.kr/npms/HlsctIstguInfoListR.np?sSearchWord=&sKncrCode01=&sKncrCode02=&sKncrCode=&sch2=&sch3=&sSearchOpt=2&pageIndex=1&ncpms.cmm.token.html.TOKEN=657e7ed23ca51f016e3974f05dbfb141&hlsctIstguNo=">병해충
+          더 알아보기</a><br/>
+        <a style="width:100px" href="https://psis.rda.go.kr/psis/agc/res/agchmRegistStusLst.ps">농약 더
+          알아보기</a><br />
+        <a style="width:100px" href=""> </a>
+      </aside>
+  
+      <hr />
+  
+      <footer>
+        <div id="copyright">
+          Copyright (c) 2022 Farm Protector Inc. All rights reserved
+        </div>
+        <div id="SNS">
+          <a href="http://facebook.com" target="_blank">
+            <img src="images/facebook.png" height="32" alt="Facebook">
+          </a>
+          <a href="http://twitter.com" target="_blank">
+            <img src="images/twitter.png" height="32" alt="Twitter">
+          </a>
+          <a href="http://instagram.com" target="_blank">
+            <img src="images/instagram.png" height="32" alt="Instagram">
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+</html>
