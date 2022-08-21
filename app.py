@@ -1,5 +1,9 @@
 # app.py
-from flask import Flask, render_template, request
+import json
+
+from flask import Flask, render_template, request, make_response
+
+import dbModule
 
 app = Flask(__name__, static_folder='statics', template_folder='templates')
 
@@ -25,9 +29,19 @@ def our_service():
 
 @app.route('/test', methods=['GET', 'POST'])  ## 수정 해야함
 def test():
-  print(request.form)
   print(request.files['myfile'])
-  return render_template('upload.html')
+  category = request.form["class"]
+  bug = "점박이응애"
+  db_class = dbModule.Database()
+  sql = 'SELECT * FROM list WHERE class = "{}" AND name = "{}";'.format(category, bug)
+  print(sql)
+  row = db_class.executeALL(sql)
+  result = dict()
+  for i in range(len(row)):
+    result[i] = row[i]
+  resp = make_response(json.dumps(result, ensure_ascii=False))
+
+  return resp
 
 
 if __name__=="__main__":
