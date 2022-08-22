@@ -3,7 +3,7 @@
 
 
 ### 프론트엔드
-언어 : HTML, CSS, JAvAScript
+언어 : HTML, CSS, JAVAScript
 
 
 ### 백엔드
