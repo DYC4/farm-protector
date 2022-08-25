@@ -1,4 +1,5 @@
 #-*- coding:utf-8 -*-
+import os
 from flask import Flask, render_template, jsonify, request, url_for
 from werkzeug.utils import secure_filename
 import torch
@@ -40,7 +41,7 @@ model = model.to(device)
 ########## 모델 불러오기
 
 device = torch.device('cpu')
-model = torch.load('C:\\Users\\tjtnd\\PycharmProjects\\helloFlask\\pt\\model_re112.pt', map_location=device)
+model = torch.load(os.getcwd()+'\\pt\\model_re112.pt', map_location=device)
 app = Flask(__name__, static_folder='static', template_folder='templates')
 
 
@@ -84,11 +85,11 @@ def fileupload():
     file = request.files['myfile']
     filename = file.filename
     print(filename, plant)
-    file.save(os.path.join("C:\\Users\\tjtnd\\PycharmProjects\\helloFlask\\static\\images\\", filename))
+    file.save(os.path.join(os.getcwd()+"\\static\\images\\", filename))
     # file.save('static/images', secure_filename(file.filename))
     #img_src = url_for('static', filename='static/images/' + filename)
     # file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-    image = Image.open("C:\\Users\\tjtnd\\PycharmProjects\\helloFlask\\static\\images\\" + filename)
+    image = Image.open(os.getcwd()+"\\static\\images\\" + filename)
     trans = transforms.Compose([transforms.RandomResizedCrop(84),
                                 transforms.RandomHorizontalFlip(),
                                 transforms.ToTensor(),
@@ -162,5 +163,5 @@ def fileupload():
 #     return str(result.item())
 
 
-app.run(host='localhost', port=5000)
+app.run(host='0.0.0.0', port=5001)
 # app.config['UPLOAD_FOLDER'] = '/static/images'
