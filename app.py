@@ -7,21 +7,8 @@ import numpy as np
 import torchvision
 
 from torchvision import transforms
-from torchvision.models import resnet50
 
 from torch import nn, optim
-from torch.utils.data import DataLoader
-from torchvision.transforms import ToTensor
-from tqdm import tqdm
-
-from easyfsl.samplers import TaskSampler
-from easyfsl.utils import plot_images, sliding_average
-
-from pathlib import Path
-from torch.utils.data import Dataset
-
-# from torchvision.io import read_image
-#import cv2
 
 from PIL import Image
 import os
@@ -41,7 +28,7 @@ model = model.to(device)
 ########## 모델 불러오기
 
 device = torch.device('cpu')
-model = torch.load(os.getcwd()+'\\pt\\model_re112.pt', map_location=device)
+model = torch.load(os.getcwd()+'/pt/model_re112.pt', map_location=device)
 app = Flask(__name__, static_folder='static', template_folder='templates')
 
 
@@ -85,11 +72,11 @@ def fileupload():
     file = request.files['myfile']
     filename = file.filename
     print(filename, plant)
-    file.save(os.path.join(os.getcwd()+"\\static\\images\\", filename))
+    file.save(os.path.join(os.getcwd()+"/static/images/", filename))
     # file.save('static/images', secure_filename(file.filename))
     #img_src = url_for('static', filename='static/images/' + filename)
     # file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-    image = Image.open(os.getcwd()+"\\static\\images\\" + filename)
+    image = Image.open(os.getcwd()+"/static/images/" + filename)
     trans = transforms.Compose([transforms.RandomResizedCrop(84),
                                 transforms.RandomHorizontalFlip(),
                                 transforms.ToTensor(),
