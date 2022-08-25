@@ -1,0 +1,33 @@
+.wrap { width:715px; min-height:600px; }
+
+header { height: 80px; }
+
+nav { width: 715px; }
+    
+nav a { height:20px; }
+
+footer { height:70px; }
+
+.side{
+  height:10px;
+  width:120px
+}
+
+.peoplelist { height: 462px; }
+
+.peoplelist ul li img{ 
+  width: 135px; 
+  height: 135px; 
+}
+
+table{
+  height:600px;
+  width:auto;
+  cellspacing:30px;
+}
+
+table th{
+  height:50px;
+  border-spacing: 10px;
+  border-collapse: separate;
+}

@@ -9,9 +9,13 @@
   <link rel="stylesheet" type="text/css" href={{url_for('static',filename='style-size.css')}} />
   <link rel="stylesheet" type="text/css" href={{url_for('static',filename='style-layout.css')}} />
   <link rel="stylesheet" type="text/css" href={{url_for('static',filename='style-presentation.css')}} />
+
+  <script language="javascript">
+    function showPopup() { window.open("/croplist", "crop_list_check", "width=400, height=300, left=100, top=50"); }
+  </script>
 </head>
 
-<body class="service">
+<body class="back">
   <br />
   <br />
   <form action="/test"
@@ -19,55 +23,36 @@
         enctype="multipart/form-data"
   >
     <fieldset>
-      <legend id="service"> 고객님의 농장 상태를 입력해주세요. </legend>
-      <br />
-      <span> 이 름 </span> <input type="text"> </br>
-      <span> 이 메 일 </span> <input type="email"> </br>
-
-      <span> 작물 분야 </span>
-      <label> 채소류
-        <input type="checkbox" value="채소" name="class">
-      </label>
-      <label> 과실류
-        <input type="checkbox" value="과일" name="class">
-      </label>
-      <label> 곡식류
-        <input type="checkbox" value="곡식" name="class">
-      </label>
-      <label> 기타
-        <input type="checkbox" value="기타" name="class">
-      </label>
-      <br />
-      <br />
-
-
-      <span> 피해 상태 </span>
-      <label> 상
-        <input type="checkbox" name="plant" value="상">
-      </label>
-      <label> 중
-        <input type="checkbox" name="plant" value="중">
-      </label>
-      <label> 하
-        <input type="checkbox" name="plant" value="하">
-      </label>
+      <legend> 고객님의 농장 상태를 입력해주세요. </legend>
+      <br/> 
+      <span> 이&nbsp;&nbsp;&nbsp;름&nbsp;&nbsp;>&nbsp;</span> <input type="text">
+      <br/>
+      <br/>
+      <span> 이 메 일 > </span>&nbsp;<input type="email">
+      <br/>
+      <br/>
+      <span> 작&nbsp;&nbsp;&nbsp;물&nbsp;&nbsp;>&nbsp;</span> 
+      <input type="text", name="plant">
+      <input type="button" value="작물 이름을 확인해보세요" onclick="showPopup()"/>
+    
       <br />
       <br />
     </fieldset>
+    
     <br />
     <br />
-    <h2>확인하고 싶은 해충을 사진을 넣어주세요 ! </h2>
-   
-    파일 업로드하기
-    <br>
-    <p><input type="file" name="myfile"> </p>
-    <br />
-
-
+    
+    <fieldset>
+      <legend id="service"> 확인하고 싶은 해충 사진을 넣어주세요 ! </legend>
+       <br>
+      <p><input type="file" name="myfile"> </p>
+  
+    </fieldset>
     <hr>
+    &nbsp;&nbsp;&nbsp;
+    <input type="submit" value="확인" />
     <input type="reset" value="취소" />
-    <input type="submit" value="보내기" />
-
+    
   </form>
 </body>
 
