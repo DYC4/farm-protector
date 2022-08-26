@@ -21,7 +21,6 @@
 
 ## OUR SERVICE
 ### 주제 선정 배경
----
 <img width="863" alt="주제 선정 배경" src="https://user-images.githubusercontent.com/101931446/186854226-251f8d17-c26d-48de-8e5a-5f603cc94c10.png">
 첫번째로 병해충으로 인한 농부의 피해가 증가하고 있습니다. 5년 사이 병해충 피해로 인한 농부의 피해면적이 7.6배 증가
 2020년 농가 피해액은 약 342억원에 달했습니다.
@@ -31,15 +30,12 @@
 전문가를 고용하지 않고 검색을 통해 해충에 대해 알아보려고 하니, 화면에 보이는 것과 같은 상황을 마주하게 됩니다. 화면에서 보이는 것만 해도 사과 관련 해충이 수십개입니다. 이런 많은 종류의 해충을 일일이 확인하고 대조하여 찾기에는 시간과 노력이 많이 필요해보입니다.
 
 ### 활용 데이터
----
 <img width="862" alt="활용데이터" src="https://user-images.githubusercontent.com/101931446/186854010-32117259-bd01-4184-bf78-9538ae5fce21.png">
 
 ### 시스템 구성도
----
 <img width="938" alt="시스템구성도" src="https://user-images.githubusercontent.com/101931446/186854765-a2291a1a-fbe9-4d63-bdd3-e85956291f7a.png">
 
 ### 서비스 소개
----
 <img width="863" alt="서비스 소개" src="https://user-images.githubusercontent.com/101931446/186854282-2b338c83-3cb5-44d6-873d-e52a152988db.png">
 
 
