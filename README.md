@@ -37,9 +37,9 @@
 이러한 심각성에도 불구하고 우리나라에는 병해충 전문가가 부족한 상황입니다. [경상대학교 식물의학과 교수님](https://www.nongmin.com/opinion/OPP/SWE/PRO/334146/view)께서는 농기원이나 농기센터에 관련 전문가가 거의 없는 상황을 지적하기도 했습니다.
 전문가를 고용하지 않고 검색을 통해 해충에 대해 알아보려고 하니, 화면에 보이는 것과 같은 상황을 마주하게 됩니다. 화면에서 보이는 것만 해도 사과 관련 해충이 수십개입니다. 이런 많은 종류의 해충을 일일이 확인하고 대조하여 찾기에는 시간과 노력이 많이 필요해보입니다.
 
-<img width="862" alt="활용데이터" src="https://user-images.githubusercontent.com/101931446/186854010-32117259-bd01-4184-bf78-9538ae5fce21.png">
+<img width="863" alt="활용데이터" src="https://user-images.githubusercontent.com/101931446/186854010-32117259-bd01-4184-bf78-9538ae5fce21.png">
 
-<img width="938" alt="시스템구성도" src="https://user-images.githubusercontent.com/101931446/186854765-a2291a1a-fbe9-4d63-bdd3-e85956291f7a.png">
+<img width="863" alt="시스템구성도" src="https://user-images.githubusercontent.com/101931446/186854765-a2291a1a-fbe9-4d63-bdd3-e85956291f7a.png">
 
 <img width="863" alt="서비스 소개" src="https://user-images.githubusercontent.com/101931446/186854282-2b338c83-3cb5-44d6-873d-e52a152988db.png">
 
