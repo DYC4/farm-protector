@@ -5,17 +5,15 @@
 - 주제 : 해충 판별 및 농약 안내 시스템
 - 팀원 : 김누리, 서수원, 송윤아, 안정민, 임채명, 장세음 
 
-### 프론트엔드
-언어 : HTML, CSS, JAVAScript
-
-
-### 백엔드
-언어 : 플라스크 - 파이참
+### 사용 STACK
+#### Model : Few-Shot Learning, Transfer Learning, Domain Adaptation
+#### Back-end : Flask, Python, MySQL
+#### Front-end : HTML, CSS, Java Script
 
 ## OUR MODEL 
-- FEW SHOT
-- TL
-- DA
+- [FEW SHOT](https://github.com/DYC4/farm-protector/blob/main/models/few-shot.ipynb)  
+- [Transfer Learning](https://github.com/DYC4/farm-protector/blob/main/models/transfer-learning.ipynb)
+- [Domain Adaptation](https://github.com/DYC4/farm-protector/blob/main/models/DA.ipynb)
 
 ## OUR ROLE
 - 김누리 
