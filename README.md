@@ -3,8 +3,7 @@
 2022 데이터청년캠퍼스 고려대학교 4조 프로젝트
 
 ## OUR PROJECT 
-- 주제 : 해충 판별 및 농약 안내 시스템
-- 팀원 : 김누리, 서수원, 송윤아, 안정민, 임채명, 장세음 
+- 주제 : 청년 귀농인과 주말 농장 운영자를 위한 해충 판독 영상 처리 시스템 및 농약 추천 서비스 구현
 
 ## 사용 STACK
 - Model : [Few-Shot Learning](https://github.com/DYC4/farm-protector/blob/main/models/few-shot.ipynb), [Transfer Learning](https://github.com/DYC4/farm-protector/blob/main/models/transfer-learning.ipynb), [Domain Adaptation](https://github.com/DYC4/farm-protector/blob/main/models/DA.ipynb)
