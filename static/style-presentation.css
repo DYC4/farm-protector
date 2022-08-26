@@ -1,0 +1,127 @@
+@font-face {
+  font-family: NanumOgBiCe;
+  src: url("./NanumOgBiCe.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+ *{
+  font-family: 'NanumOgBiCe', serif;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+body { 
+  background-color: #ffffff;
+  font-size: 0.75em; 
+  line-height: 1.2em; 
+  font-weight: bold;
+}
+
+.wrap { text-align:left; background-color: white; }
+
+a { text-decoration: none; }
+
+#logo { color: #225316; font-size: 60px; }
+#logo2 { color: #000000; font-size: 30px; }
+#logo3 { color: #46a82e; font-size: 50px; }
+
+header .right a:hover { color: gray; }
+
+nav { background-color: #ebf4d6; }
+
+/* input { color:blue; } */    
+/* nav ul { list-style:none; font-size: 14px; color: #ff0099;} */
+
+nav a {
+  text-decoration:none; 
+  color:#000000; 
+  border-style: hidden hidden solid hidden;
+  border-color: transparent;
+}
+
+/*hover : 마우스 커서를 올렸을 때*/
+nav a:hover { 
+  color:#225316;
+  background-color: white;
+  border-color: #225316; 
+}
+
+footer #copyright { font-family: consolas; } 
+
+footer #SNS a { text-decoration: none; }
+
+.side {
+  background-color: #ebf4d6;
+  font-size: 15px;
+  border-radius:18px;
+  test-align: center;
+}
+
+.peoplelist { 
+  font-family: arial; 
+  background-color: #fcfcfc;
+     
+  background-repeat: no-repeat;
+	background-position: 0px 0px;	
+  border:solid 3px #007523; 
+  border-radius:10px;
+  
+}
+
+.peoplelist .head { 
+  font-size: 25px; 
+  font-weight: bolder; 
+}
+
+.peoplelist ul li { 
+  font-size: 16px; 
+  list-style-type: none; 
+}
+
+.peoplelist ul li img { 
+  border: solid; 
+  border-color: lightgray; 
+  border-width: 1px; 
+}
+
+.SNS a {
+  color: #225316;
+}
+
+#service { 
+  color: #225316; 
+  font-size: 20px; 
+}
+
+legend{
+  background-color:#caeac3;
+  border-radius:18px;
+  font-size: 30px; 
+}
+
+fieldset{
+  background-color:#ffffff;
+}
+
+.size{
+  font-size:18px;
+  margin:0 0px 0 15px;
+}
+
+.back{
+  background-color: #e5e8de;
+}
+
+/* 테이블 태그 */
+table th td{
+  font-size:25px;
+  font-weight:bold;
+  background-color: #ebf4d6; 
+}
+
+table tr{
+  font-size:18px;
+}

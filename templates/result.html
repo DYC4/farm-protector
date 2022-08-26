@@ -1,30 +1,39 @@
 <!DOCTYPE HTML>
-<html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 
 <head>
+  <script src="https://kit.fontawesome.com/1c67e0a174.js" crossorigin="anonymous"></script>
   <meta charset="utf-8" />
   <meta authors="DATA_CAMPUS_KU_TEAM4" />
   <meta name="viewport" content="width=device-width">
   <title>Welcome Farm protector!</title>
-  <link rel="stylesheet" type="text/css" href={{url_for('static',filename='style-size.css')}} />
-  <link rel="stylesheet" type="text/css" href={{url_for('static',filename='style-layout.css')}} />
-  <link rel="stylesheet" type="text/css" href={{url_for('static',filename='style-presentation.css')}} />
+    <link rel="stylesheet" type="text/css" href={{url_for('static',filename='style-size.css')}} />
+    <link rel="stylesheet" type="text/css" href={{url_for('static',filename='style-layout.css')}} />
+    <link rel="stylesheet" type="text/css" href={{url_for('static',filename='style-presentation.css')}} />
 </head>
-
 <body class="result">
   <br />
   <br />
-  <h1>분석결과</h1>
-  <h3>해충명: {{bug}}</h3>
+       <fieldset>
+      <legend id="service"> 분석 결과 </legend>
+          <!--해충 사진 2개(입력 사진, 매칭 사진) -->
+           <img src="{{url_for('static',filename='images/'+filename)}}" width="100%" height="200">
+       <h2>사진의 해충은 {{bug}} 입니다.</h2>
+       <h2>작물의 이름은 {{plant}} 입니다.</h2>
+       </br>
+       <h2> 쓸 수 있는 농약은 다음과 같습니다.</h2>
   <ol>
+      <i class="fa-solid fa-bug-slash"></i>
     {% for item in data %}
-    <li>
-      <p>작물명: {{item.plant}}</p>
-      <p>살충제명: {{item.medi}}</p>
-    </li>
+      <h3> No.{{loop.index}}</h3>
+      <p>{{item.medi}}</p>
+      </br>
     {% endfor %}
   </ol>
-
+</p>
+  
+    </fieldset>
+  
 
 </body>
 

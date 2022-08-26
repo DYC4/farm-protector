@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+  
+  <head>
+    <script src="https://kit.fontawesome.com/1c67e0a174.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8" />
+    <meta authors="DATA_CAMPUS_KU_TEAM4" />
+    <meta name="viewport" content="width=device-width">
+    <title>Welcome Farm protector!</title>
+    <link rel="stylesheet" type="text/css" href={{url_for('static',filename='style-size.css')}} />
+    <link rel="stylesheet" type="text/css" href={{url_for('static',filename='style-layout.css')}} />
+    <link rel="stylesheet" type="text/css" href={{url_for('static',filename='style-presentation.css')}} />
+
+    
+  </head>
+
+ <body class="back">
+  <br />
+  <br />
+  <form action="/contact.html"
+        enctype="multipart/form-data"
+  >
+    <fieldset>
+    <i class="fa-solid fa-phone"> 건의 사항을 남겨주세요. </i>
+    <article id="contact">
+    	<h2>  Contact Us</h2>
+    	<form method="post" action="#">
+    		<label for="name">NAME > &nbsp;</label>
+    		<input type="text" name="name" id="name" />
+        <br/>
+    		<label for="email">EMAIL >&nbsp;&nbsp;</label>
+    		<input type="text" name="email" id="email"/>
+        <br/>
+    		<label for="message">Message&nbsp;</label>
+    		<textarea name="message" id="message" rows="4"></textarea>    	
+      </form> 
+      <hr>&nbsp;&nbsp;&nbsp;
+      <input type="submit" value="확인" />
+      <input type="reset" value="취소" />
+            
+    		
+    </article>
+    </fieldset>
+  </body>
+</html>
