@@ -7,7 +7,7 @@
 - 팀원 : 김누리, 서수원, 송윤아, 안정민, 임채명, 장세음 
 
 ## 사용 STACK
-- Model : [FEW SHOT](https://github.com/DYC4/farm-protector/blob/main/models/few-shot.ipynb), [Transfer Learning](https://github.com/DYC4/farm-protector/blob/main/models/transfer-learning.ipynb), [Domain Adaptation](https://github.com/DYC4/farm-protector/blob/main/models/DA.ipynb)
+- Model : [Few-Shot Learning](https://github.com/DYC4/farm-protector/blob/main/models/few-shot.ipynb), [Transfer Learning](https://github.com/DYC4/farm-protector/blob/main/models/transfer-learning.ipynb), [Domain Adaptation](https://github.com/DYC4/farm-protector/blob/main/models/DA.ipynb)
 - Back-end : Flask, Python, MySQL
 - Front-end : HTML, CSS, Java Script
 
@@ -20,9 +20,11 @@
 - 장세음 : Back-end
 
 ## OUR SERVICE
-
+<img width="863" alt="주제 선정 배경" src="https://user-images.githubusercontent.com/101931446/186854226-251f8d17-c26d-48de-8e5a-5f603cc94c10.png">
 설명(프로젝트 배경)
-시스템구성도
+<img width="862" alt="활용데이터" src="https://user-images.githubusercontent.com/101931446/186854010-32117259-bd01-4184-bf78-9538ae5fce21.png">
+<img width="938" alt="시스템구성도" src="https://user-images.githubusercontent.com/101931446/186854765-a2291a1a-fbe9-4d63-bdd3-e85956291f7a.png">
+<img width="863" alt="서비스 소개" src="https://user-images.githubusercontent.com/101931446/186854282-2b338c83-3cb5-44d6-873d-e52a152988db.png">
 핵심기능
 
 
